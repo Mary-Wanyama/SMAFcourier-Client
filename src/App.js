@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Admin from "./Components/Admin";
 import Login from "./Components/Login";
 import Order from "./Components/Order";
+import Navbar from "./Components/Navbar";
 
 
 const App =() => {
