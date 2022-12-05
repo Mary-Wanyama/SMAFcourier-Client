@@ -98,13 +98,13 @@ function OrderForm() {
               />
               <TextField
                 id="outlined-disabled"
-                label=" Pick Up Location"
+                label=" Drop Off Location"
                 value={drop_off_location}
                 onChange={(e)=>setDrop_Off_Location(e.target.value)}
               />
                <TextField
                 id="outlined-disabled"
-                label=" Drop Off Location"
+                label=" Departure Time"
                 value={departute_time}
                 onChange={(e)=>setDepartute_Time(e.target.value)}
               />
@@ -119,7 +119,7 @@ function OrderForm() {
                 />
                 <TextField
                   id="outlined-read-only-input"
-                  label="Departure"
+                  label="Pick Up Location"
                   value={pick_up_location}
                   onChange={(e)=>setPick_Up_Location(e.target.value)}
 
