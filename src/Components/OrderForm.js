@@ -79,7 +79,7 @@ function OrderForm() {
                 "fontSize": "40px"
               }}
             >
-              <h2> Place Your Order</h2>
+              <h2> Send Your Delivery</h2>
             </FormLabel>
             <div className='class'>
 
