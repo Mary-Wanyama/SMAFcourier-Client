@@ -126,7 +126,7 @@ function OrderForm() {
                 />
                 <TextField
                   id="outlined-read-only-input"
-                  label="Arrival"
+                  label="Arrival Time"
                   value={arrival_time}
                   onChange={(e)=>setArrival_Time(e.target.value)}
 
@@ -146,7 +146,7 @@ function OrderForm() {
                 // style={{
                 //   "margin":"18px", "background-color": "#3897f0", "width": "462px", "padding": "15px", "margin-left":"10px" ,"display" : "center"
                 // }}
-                >Order</Button>
+                >Send Parcel</Button>
               </div>
             </Box>
         </form>

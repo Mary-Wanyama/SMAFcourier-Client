@@ -38,7 +38,8 @@ const Login =() =>{
             <div className='line'></div>        
           </div>
           <div className='other'>
-            <a className='forgot-password' href='#'>Forgot password</a>
+            <a className='forgot-password' href='url'>Forgot password</a>
+        
          </div>
          </form>
           <div className='boxacc'>
