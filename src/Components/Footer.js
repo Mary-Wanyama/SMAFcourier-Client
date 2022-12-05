@@ -14,6 +14,8 @@ const Footer =() =>{
                 <FacebookIcon className="icon"/>
                 <TwitterIcon className="icon"/>
             </div>
+            <div className="foot">
+            </div>
             <div className="copyright">
                 <p>All rights reserverd &copy;</p>
                 <p>Always at your service</p>

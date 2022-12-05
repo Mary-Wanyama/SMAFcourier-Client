@@ -13,7 +13,7 @@ const Home =() =>{
                  Choose the best package to suit your courier needs.</p>
                  <div className="btnBox">
                     <div className="btn">
-                    <NavLink to ='/login' className="SendNow"> Send Now </NavLink>
+                    <NavLink to ='/login' className="SendNow"> Send Parcel </NavLink>
                     </div>
 
                  </div>
