@@ -1,20 +1,27 @@
 footer{
+    background-color: #3897f0 ;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
-    background-color:blue ;
+    padding: 12px;
+    height: 50px;
     width: 100%;
-    padding: .5em;
-}
-
-.foot{
-    width: 30%;
-}
-
-hr{
-    margin-bottom: .5em;
-    color: whitesmoke;
+    font-size: 4px;
 }
 
 .icon{
     margin-right: 1em;
-}
+    display: flex;
+    color: white;
+} 
+
+.copyright {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+    flex: 0.3;
+    font-size: 12px;
+    font-weight: bolder 2px;
+  } 

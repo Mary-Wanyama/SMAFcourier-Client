@@ -6,11 +6,13 @@ import Login from "./Components/Login";
 import Navbar from "./Components/Navbar";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
+import Signup from "./Components/Signup";
 import OrderForm from "./Components/OrderForm";
 
 
 
 const App =() => {
+  // const [login, setlogin]= useState("")
   return(
     <>
       <Navbar />
@@ -19,6 +21,7 @@ const App =() => {
          <Route path='/contact' element={<ContactUs/>} />
          <Route path='/order' element={<Orders/>} />
          <Route path='/login' element={<Login/>} />
+         <Route path='/signup' element={<Signup/>} />
          <Route path='/orderform' element={<OrderForm />} />
          </Routes>
       <Footer/>

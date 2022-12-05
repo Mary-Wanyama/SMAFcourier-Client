@@ -6,7 +6,6 @@ import "../Css/Footer.css"
 
 const Footer =() =>{
     return(
-       
         <> 
          <footer>
         <div className=" container  container-flex">
@@ -16,7 +15,6 @@ const Footer =() =>{
                 <TwitterIcon className="icon"/>
             </div>
             <div className="foot">
-
             </div>
             <div className="copyright">
                 <p>All rights reserverd &copy;</p>
