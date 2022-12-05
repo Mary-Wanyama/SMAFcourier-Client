@@ -44,7 +44,8 @@ function OrderForm() {
             drop_off_location,
             departute_time,
             arrival_time,
-            price
+            price,
+            date
         }
       ),
     })

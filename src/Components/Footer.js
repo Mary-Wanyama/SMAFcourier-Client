@@ -16,10 +16,7 @@ const Footer =() =>{
                 <TwitterIcon className="icon"/>
             </div>
             <div className="foot">
-                <hr/>
-                <hr/>
-                <hr/>
-                <hr/>
+
             </div>
             <div className="copyright">
                 <p>All rights reserverd &copy;</p>
