@@ -12,7 +12,7 @@ const Navbar =() =>{
                     <div className="navbar">
                     <NavLink to ='/' className="navitem"> Home </NavLink>
                     <NavLink to ='/contact' className="navitem"> ContactUs </NavLink>
-                    <NavLink to ='/admin' className="navitem"> Admin </NavLink>
+                    <NavLink to ='/order' className="navitem"> Order </NavLink>
                     <NavLink to ='/login' className="navitem"> Login </NavLink>
                     </div>
                 </nav>
