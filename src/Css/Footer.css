@@ -1,0 +1,20 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color:blue ;
+    width: 100%;
+    padding: .5em;
+}
+
+.foot{
+    width: 30%;
+}
+
+hr{
+    margin-bottom: .5em;
+    color: whitesmoke;
+}
+
+.icon{
+    margin-right: 1em;
+}

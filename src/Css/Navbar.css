@@ -1,0 +1,43 @@
+:root{
+    --mainColor:#8B008B;
+}
+
+header{
+    background-color: blue;
+    position: flex;
+    top: 0;
+    width: 100%;
+    padding: .5em;
+
+}
+
+.container {
+width: 95%;
+margin: 0 auto;
+max-width: 1200px;
+display:flex ;
+justify-content: space-between;
+align-items: right;
+
+}
+
+.navbar a:hover {
+    color: black;
+  }
+  
+  .navbar a.active {
+    color: white;
+  }
+ 
+
+.navitem{
+    margin-left: 2em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.activenav{
+ color: black;
+ border-bottom: .1em wheat;
+}

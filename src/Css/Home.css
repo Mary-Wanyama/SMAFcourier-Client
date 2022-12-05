@@ -1,0 +1,59 @@
+
+
+.mainsection{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+.contentbox{
+    width: 40%;
+    padding-left: 2em;
+}
+
+.contentbox h1{
+    font-size: 2.5rem;
+}
+
+.contentbox p{
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+   
+}
+
+.btn{
+  border: 2px solid blue;
+  border-radius: 2em;;
+  background-image: linear-gradient(blue, blue),
+  radial-gradient(circle at bottom right,blue,blue);
+  background-origin: border-box;
+  
+    
+}
+
+.SendNow{
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0.5em 1.5em;
+}
+
+.imageContainer{
+    width: 80%;
+}
+
+.imageContainer img{
+    max-width:60%;
+    height:auto;
+ margin: 0 auto;
+ display: block;
+}
