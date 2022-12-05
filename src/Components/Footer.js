@@ -6,7 +6,6 @@ import "../Css/Footer.css"
 
 const Footer =() =>{
     return(
-       
         <> 
          <footer>
         <div className=" container  container-flex">
@@ -14,12 +13,6 @@ const Footer =() =>{
                 <InstagramIcon className="icon"/>
                 <FacebookIcon className="icon"/>
                 <TwitterIcon className="icon"/>
-            </div>
-            <div className="foot">
-                <hr/>
-                <hr/>
-                <hr/>
-                <hr/>
             </div>
             <div className="copyright">
                 <p>All rights reserverd &copy;</p>
