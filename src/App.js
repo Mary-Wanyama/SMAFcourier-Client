@@ -5,7 +5,7 @@ import Orders from "./Components/Orders";
 import Login from "./Components/Login";
 import Navbar from "./Components/Navbar";
 import ContactUs from "./Components/ContactUs";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 import Signup from "./Components/Signup";
 
 
@@ -22,7 +22,7 @@ const App =() => {
          <Route path='/signup' element={<Signup/>} />
 
          </Routes>
-      {/* <Footer/> */}
+      <Footer/>
 </>
 
   )}
