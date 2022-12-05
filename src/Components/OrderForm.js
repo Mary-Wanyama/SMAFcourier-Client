@@ -55,7 +55,7 @@ function OrderForm() {
 
   return(
     <>
-      <div className='form'>
+      <div className='order-form'>
         <form onSubmit={handleSubmit} className="form">
           <Box
               sx={{
@@ -142,9 +142,11 @@ function OrderForm() {
                 
               </div>
               <div>
-                <Button className='orderbtn' type="submit" variant="contained" style={{
-                  "margin":"18px", "background-color": "blue", "width": "462px", "padding": "15px", "margin-left":"10px" ,"display" : "center"
-                }}>Order</Button>
+                <Button className='orderbtn' type="submit" variant="contained" 
+                // style={{
+                //   "margin":"18px", "background-color": "#3897f0", "width": "462px", "padding": "15px", "margin-left":"10px" ,"display" : "center"
+                // }}
+                >Order</Button>
               </div>
             </Box>
         </form>

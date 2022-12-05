@@ -31,7 +31,7 @@ const Login =() =>{
               placeholder='password'/>
               <label for="password">Password</label>
           </div>
-          <button className='login-button' title='login'>Log in</button>
+          <NavLink to ='/orderform'className='login-button' title='login'>Log in</NavLink>
           <div className='separator'>
             <div className='line'></div>
                     <p>OR</p>
