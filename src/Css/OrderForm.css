@@ -1,8 +1,12 @@
-.form{
+.order-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-image: url("../Components/images/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width:100%;
 }
 .Order{
     margin-top: 200px;
@@ -27,4 +31,8 @@ h2{
 
 .orderbtn{
     align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    background-color: #3897f0;
+
 }
