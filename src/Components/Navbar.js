@@ -11,10 +11,9 @@ const Navbar =() =>{
                 <nav>
                     <div className="navbar">
                     <NavLink to ='/' className="navitem"> Home </NavLink>
-                    <NavLink to ='/contact' className="navitem"> ContactUs </NavLink>
-                    {/* <NavLink to ='/order' className="navitem"> Orders </NavLink> */}
                     <NavLink to ='/login' className="navitem"> Login </NavLink>
-                    {/* <NavLink to ='/orderform' className="navitem"> OrderForm </NavLink> */}
+                    <NavLink to ='/admin' className="navitem"> Admin </NavLink>
+                    <NavLink to ='/contact' className="navitem"> ContactUs </NavLink>
                     </div>
                 </nav>
 
