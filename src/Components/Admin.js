@@ -1,29 +1,37 @@
 import React from 'react'
 
 function Admin() {
+//   if (username === "admin" && password === "admin") {
+//     toast("Login Successfully")
+//     navigate('/booking')
+//     } else {
+//     toast.error("User not found!", {
+//     });
+//     }
+// };
   return (
     <div className='Admin'>
          <div className="dashboard">
             <section className="dashboard__content">
              <div className="history__container ">
              <div className="kevooh">
-             <div className="sendit-mainn"><p>Placed Parcel orders</p></div>
+             <div className="text-3xl font-bold" ><p>Placed Parcel orders</p></div>
              </div>
              <br />
-                 <div className="rows">
+                 {/* <div className="rows">
                    <div className="history__item velda_header">Customer Name</div>
                    <div className="history__item velda_header">Drop off Point</div>
                    <div className="history__item velda_header ">Pick up point</div>
                    <div className="history__item velda_header ">Current status</div>
                    <div className="history__item velda_header ">Edit</div>
-                 </div>
+                 </div> */}
                </div>
              {/* <div id="row_data" className="row-data"></div> */}
             </section>
          </div>
         <div className="modal-overlay closed" id="modal-overlay"></div>
         <div className="modal closed" id="modal">
-          <button className="close-button" id="close-button">X</button>
+          {/* <button className="close-button" id="close-button">X</button> */}
           <div className="modal-guts">
           <h1>Update parcel</h1>
           <div id="alert" role="alert"></div>

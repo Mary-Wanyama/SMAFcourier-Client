@@ -2,29 +2,31 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Login.css"
 
-const Login =() =>{
-    // const username=
-
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-    //     fetch("/login", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({ username }),
-    //     })
-    //       .then((r) => r.json())
-    //       .then((user) => onLogin(user));
-    //   }
+const Login =({onLogin}) =>{
+  // const [username, setUsername] = useState("");
+  //   function handleSubmit(e) {
+  //       e.preventDefault();
+  //       fetch("http://127.0.0.1:4000/login", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({username}),
+  //       })
+  //         .then((r) => r.json())
+  //         .then((user) => onLogin(user));
+  //     }
     return(
         <div className='log-in-container'>
         <div className='box'>
          <form className='login-form'>
           <div className='field text-black'>
               <input id='username'  type='name'
-              placeholder='Phone number, username or email'/>
-              <label for="username">Phone number, username or email</label>
+              placeholder='Username'
+              // value={username}
+              // onChange={(e) => setUsername(e.target.value)}
+              />
+              <label for="username">Username</label>
           </div>    
           <div className='field text-black'>  
               <input id='password' type='password'
