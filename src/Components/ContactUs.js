@@ -19,7 +19,6 @@ const ContactUs =() =>{
                       <p><FacebookIcon className="icon"/>SMAF_Courrier</p>
                       <p><TwitterIcon className="icon"/> @SMAF_Courrier</p>
                       <p><WhatsAppIcon className="icon"/> 0712345678</p>
-
                     </div>
                 
                 </div>
