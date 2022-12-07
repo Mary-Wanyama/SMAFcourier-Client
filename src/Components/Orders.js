@@ -9,17 +9,12 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Link }from 'react-router-dom';
-// import DetailsCard from "./DetailsCard";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DetailsCard from "./DetailsCard";
-
-// import { NavLink } from 'react-router-dom';
-
 
 function Orders() {
 const[orders, setOrders]= useState([])
 const detailNav= useNavigate()
-const params = useParams()
 
 useEffect(() => {
   getOrders();
@@ -52,7 +47,6 @@ return(
     <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead >
-            {/* <TableHead>Orders</TableHead> */}
               <TableRow>
                 <TableCell>Id</TableCell>
                 <TableCell  align="right">Sender Name</TableCell>
@@ -62,12 +56,6 @@ return(
                 <TableCell align="right">PickUp Location</TableCell>
                 <TableCell align="right">Drop Off Location</TableCell>
                 <TableCell align="right">Date</TableCell>
-                
-                {/* <TableCell align="right">Delete</TableCell> */}
-            
-
-
-
               </TableRow>
             </TableHead>
             <TableBody>
@@ -98,9 +86,7 @@ return(
               onClick={() => <DetailsCard key={row.id} />}
               target="blank"
             >
-              {/* <button className="viewBtn">View More</button> */}
             </Link>
-                    {/* <Link to="/" element={<DetailsCard orders={orders}/>}></Link> */}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                     </svg>

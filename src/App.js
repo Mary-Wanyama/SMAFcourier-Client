@@ -10,7 +10,7 @@ import Signup from "./Components/Signup";
 import OrderForm from "./Components/OrderForm";
 import DetailsCard from "./Components/DetailsCard";
 import Admin from "./Components/Admin";
-
+// import Email from './Components/email';
 
 
 const App =() => {
