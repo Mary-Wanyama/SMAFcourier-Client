@@ -27,26 +27,26 @@ function Signup() {
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                First Name<span class="req">*</span>
+                User Name<span class="req">*</span>
               </label>
               <input type="text" required autocomplete="off" />
             </div>
             <div class="field-wrap">
               <label>
-                Last Name<span class="req">*</span>
+                Email Address<span class="req">*</span>
               </label>
               <input type="text"required autocomplete="off"/>
             </div>
           </div>
           <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Password<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
           <div class="field-wrap">
             <label>
-              Set A Password<span class="req">*</span>
+              Confirm Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>

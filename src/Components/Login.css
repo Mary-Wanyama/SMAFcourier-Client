@@ -122,7 +122,12 @@ input:not(:placeholder-shown){
     color: black;
     font-weight: 600;
 }
-
+.logout-btn{
+    align-items: left;
+}
+.navbar{
+    align-items: left;
+}
 
 
 
