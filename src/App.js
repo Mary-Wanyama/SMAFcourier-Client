@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+// import React,{useEffect, useState} from "react";
 import {Route, Routes} from 'react-router-dom';
 import Home from './Components/Home';
 import Orders from "./Components/Orders";
@@ -10,7 +10,7 @@ import Signup from "./Components/Signup";
 import OrderForm from "./Components/OrderForm";
 import DetailsCard from "./Components/DetailsCard";
 import Admin from "./Components/Admin";
-import UpdateOrder from "./Components/UpdateOrder";
+
 
 
 const App =() => {
@@ -30,18 +30,12 @@ const App =() => {
          <Route path='/admin' element={<Admin/>} />
          <Route path='/login' element={<Login/>} />
          <Route path='/signup' element={<Signup/>} />
-          <Route path='/admin' element={<Admin/>} />
+         <Route path='/admin' element={<Admin/>} />
          <Route path='/orderform' element={<OrderForm />} />
-<<<<<<< HEAD
-         <Route path='/order' element={<Orders/>} />
-         <Route path='/updateorder' element={<UpdateOrder/>} />
-       
-        
-=======
          <Route path="/order/:id" element={<DetailsCard />} />
          <Route path='/admin' element={<Admin/>} />
          <Route path='/contact' element={<ContactUs/>} />
->>>>>>> 3a90103b0be766134619ef768dced9e768a16a5e
+         <Route path='/order' element={<Orders/>} />
          </Routes>
       <Footer/>
 </>
