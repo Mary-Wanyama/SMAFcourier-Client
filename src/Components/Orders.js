@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 
 import { useState } from "react";
 import { useEffect } from "react";
-=======
-import { useState, useEffect } from "react";
->>>>>>> 3a90103b0be766134619ef768dced9e768a16a5e
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
