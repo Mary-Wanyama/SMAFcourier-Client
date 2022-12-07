@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import FormLabel from '@mui/material/FormLabel'
-import "../Css/OrderForm.css"
+
 
 
 function OrderForm() {
@@ -24,9 +24,8 @@ function OrderForm() {
   const [number_of_kgs, setNumber_Of_Kgs] = useState('')
   const [drop_off_location, setDrop_Off_Location] = useState('')
   const [date, setDate] = useState('')
-  const [departute_time, setDepartute_Time] = useState('')
-  const [arrival_time, setArrival_Time] = useState('')
-  const [price, setPrice] = useState('')
+  const [sender_name, setSender_Name] = useState('')
+  const [receiver_name, setReceiver_Name] = useState('')  
   const navigate = useNavigate()
 
   function handleSubmit(e) {
@@ -42,9 +41,8 @@ function OrderForm() {
             pick_up_location,
             number_of_kgs,
             drop_off_location,
-            departute_time,
-            arrival_time,
-            price,
+            sender_name,
+            receiver_name,
             date
         }
       ),
@@ -83,11 +81,20 @@ function OrderForm() {
             </FormLabel>
             <div className='class'>
 
-            <TextField
-                  id="outlined-password-input"
-                  label="Kilograms"
-                  value={number_of_kgs}
-                  onChange={(e)=>setNumber_Of_Kgs(e.target.value)}
+           
+                  <TextField
+                id="outlined-disabled"
+                label=" Sender Name"
+                value={sender_name}
+                onChange={(e)=>setSender_Name(e.target.value)}
+              />
+
+                 <TextField
+                  id="outlined-read-only-input"
+                  label="Reciever Name"
+                  value={receiver_name}
+                  onChange={(e)=>setReceiver_Name(e.target.value)}
+
                 />
               <TextField
                 required
@@ -96,18 +103,12 @@ function OrderForm() {
                 value={package_type}
                 onChange={(e)=>setPackage_Type(e.target.value)}
               />
-              <TextField
-                id="outlined-disabled"
-                label=" Drop Off Location"
-                value={drop_off_location}
-                onChange={(e)=>setDrop_Off_Location(e.target.value)}
-              />
                <TextField
-                id="outlined-disabled"
-                label=" Departure Time"
-                value={departute_time}
-                onChange={(e)=>setDepartute_Time(e.target.value)}
-              />
+                  id="outlined-password-input"
+                  label="Kilograms"
+                  value={number_of_kgs}
+                  onChange={(e)=>setNumber_Of_Kgs(e.target.value)}
+                />
               </div>
            
               <div className='class'>
@@ -116,36 +117,27 @@ function OrderForm() {
                   label="Date"
                   value={date}
                   onChange={(e)=>setDate(e.target.value)}
+                  
+                  
+                
                 />
                 <TextField
                   id="outlined-read-only-input"
                   label="Pick Up Location"
                   value={pick_up_location}
-                  onChange={(e)=>setPick_Up_Location(e.target.value)}
+                  onChange={(e)=>setPick_Up_Location(e.target.value)}   
 
                 />
-                <TextField
-                  id="outlined-read-only-input"
-                  label="Arrival Time"
-                  value={arrival_time}
-                  onChange={(e)=>setArrival_Time(e.target.value)}
-
-                />
-                <TextField
-                  id="outlined-read-only-input"
-                  label="Price"
-                  value={price}
-                  onChange={(e)=>setPrice(e.target.value)}
-
-                />
-                
+               <TextField
+                id="outlined-disabled"
+                label=" Drop Off Location"
+                value={drop_off_location}
+                onChange={(e)=>setDrop_Off_Location(e.target.value)}
+              />
                 
               </div>
               <div>
                 <Button className='orderbtn' type="submit" variant="contained" 
-                // style={{
-                //   "margin":"18px", "background-color": "#3897f0", "width": "462px", "padding": "15px", "margin-left":"10px" ,"display" : "center"
-                // }}
                 >Send Parcel</Button>
               </div>
             </Box>

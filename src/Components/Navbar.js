@@ -14,6 +14,7 @@ const Navbar =() =>{
                     <NavLink to ='/login' className="navitem"> Login </NavLink>
                     <NavLink to ='/admin' className="navitem"> Admin </NavLink>
                     <NavLink to ='/contact' className="navitem"> ContactUs </NavLink>
+                    <NavLink to ='/update' className="navitem"> UpdateOrder </NavLink>
                     </div>
                 </nav>
 

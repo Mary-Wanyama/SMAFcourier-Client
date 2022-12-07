@@ -1,15 +1,3 @@
-// import React from "react";
-
-// const Orders = () => {
-//   return (
-//     <>
-//       <h1>Order List </h1>
-//     </>
-//   );
-// };
-
-// export default Orders;
-
 
 import { useState } from "react";
 import { useEffect } from "react";
@@ -21,6 +9,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Link }from 'react-router-dom';
+
+// import { NavLink } from 'react-router-dom';
+
 
 function Orders() {
 const[orders, setOrders]= useState([])
@@ -68,18 +59,20 @@ return(
   <>
     <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-            <TableHead>Orders</TableHead>
+            <TableHead >
+            {/* <TableHead>Orders</TableHead> */}
               <TableRow>
                 <TableCell>Id</TableCell>
+                <TableCell  align="right">Sender Name</TableCell>
+                <TableCell align="right">Reciever Name</TableCell>
                 <TableCell align="right">Package Type</TableCell>
-                <TableCell align="right">Pick Up Location</TableCell>
-                <TableCell align="right">Drop Off Point</TableCell>
+                <TableCell align="right">NumberOf Kgs</TableCell>
+                <TableCell align="right">PickUp Location</TableCell>
+                <TableCell align="right">Drop Off Location</TableCell>
                 <TableCell align="right">Date</TableCell>
-                <TableCell align="right">Departure Time</TableCell>
-                <TableCell align="right">Arrival Time</TableCell>
-                <TableCell align="right">Number Of Kgs</TableCell>
-                <TableCell align="right">Price</TableCell>
+                
+                {/* <TableCell align="right">Delete</TableCell> */}
+            
 
 
 
@@ -94,14 +87,13 @@ return(
                   <TableCell component="th" scope="row">
                     {row.id}
                   </TableCell>
+                  <TableCell align="right">{row.sender_name}</TableCell>
+                  <TableCell align="right">{row.receiver_name}</TableCell>
                   <TableCell align="right">{row.package_type}</TableCell>
+                  <TableCell align="right">{row.number_of_kgs}</TableCell>
                   <TableCell align="right">{row.pick_up_location}</TableCell>
                   <TableCell align="right">{row.drop_off_location}</TableCell>
                   <TableCell align="right">{row.date}</TableCell>
-                  <TableCell align="right">{row.departute_time}</TableCell>
-                  <TableCell align="right">{row.arrival_time}</TableCell>
-                  <TableCell align="right">{row.number_of_kgs}</TableCell>
-                  <TableCell align="right">{row.price}</TableCell>
                   <TableCell align="right"><Link to="/orders/:id">{row.view}</Link></TableCell>
                   <button onClick={() => {deleteOrder (row.id)}} type="button display in-line padding: 15px" className="btn-danger btn-xsm">DELETE</button>
 
@@ -110,8 +102,11 @@ return(
             </TableBody>
           </Table>
     </TableContainer>
+    {/* <NavLink to ='/'className='logout-button' title='logout'>Log Out</NavLink> */}
   </>
+  
   );
+  
 }
 
 

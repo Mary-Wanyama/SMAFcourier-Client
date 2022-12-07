@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Signup from "./Components/Signup";
 import OrderForm from "./Components/OrderForm";
 import Admin from "./Components/Admin";
+import UpdateOrder from "./Components/UpdateOrder";
 
 
 const App =() => {
@@ -18,12 +19,16 @@ const App =() => {
       <Navbar />
          <Routes>
          <Route path='/' element={<Home/>} />
-         <Route path='/order' element={<Orders/>} />
+         <Route path='/contact' element={<ContactUs/>} />
+         <Route path='/admin' element={<Admin/>} />
          <Route path='/login' element={<Login/>} />
          <Route path='/signup' element={<Signup/>} />
+          <Route path='/admin' element={<Admin/>} />
          <Route path='/orderform' element={<OrderForm />} />
-         <Route path='/admin' element={<Admin/>} />
-         <Route path='/contact' element={<ContactUs/>} />
+         <Route path='/order' element={<Orders/>} />
+         <Route path='/updateorder' element={<UpdateOrder/>} />
+       
+        
          </Routes>
       <Footer/>
 </>
