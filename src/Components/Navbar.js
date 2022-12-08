@@ -12,7 +12,7 @@ const Navbar =({onLogout}) =>{
     return(
         <> 
         <header>
-            <div className="container  container-flex">
+            <div className=" nav-container">
                 <nav>
                     <div className="navbar">
                     <NavLink to ='/' className="navitem"> Home </NavLink>

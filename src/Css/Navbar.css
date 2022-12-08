@@ -1,25 +1,19 @@
-:root{
+ /* :root{
     --mainColor:#8B008B;
-}
+} */
 
 header{
     background-color: #3897f0;
     position: flex;
-    /* top: 0; */
-    width: 100%;
-    padding: .5em;
-
-}
-
-.container {
-width: 95%;
+    top: 0;
+     width: 100%;
+    padding: .7em;
 margin: 0 auto;
-max-width: 1200px;
 display:flex ;
-justify-content: space-between;
+justify-content: flex-end;
 align-items: right;
 
-}
+} 
 
 .navbar a:hover {
     color: black;
