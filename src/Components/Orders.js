@@ -52,10 +52,10 @@ return(
                 <TableCell  align="right">Sender Name</TableCell>
                 <TableCell align="right">Reciever Name</TableCell>
                 <TableCell align="right">Package Type</TableCell>
-                <TableCell align="right">NumberOf Kgs</TableCell>
-                <TableCell align="right">PickUp Location</TableCell>
-                <TableCell align="right">Drop Off Location</TableCell>
-                <TableCell align="right">Date</TableCell>
+                {/* <TableCell align="right">NumberOf Kgs</TableCell> */}
+                {/* <TableCell align="right">PickUp Location</TableCell> */}
+                {/* <TableCell align="right">Drop Off Location</TableCell> */}
+                {/* <TableCell align="right">Date</TableCell> */}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -70,10 +70,10 @@ return(
                   <TableCell align="right">{row.sender_name}</TableCell>
                   <TableCell align="right">{row.receiver_name}</TableCell>
                   <TableCell align="right">{row.package_type}</TableCell>
-                  <TableCell align="right">{row.number_of_kgs}</TableCell>
-                  <TableCell align="right">{row.pick_up_location}</TableCell>
-                  <TableCell align="right">{row.drop_off_location}</TableCell>
-                  <TableCell align="right">{row.date}</TableCell>
+                  {/* <TableCell align="right">{row.number_of_kgs}</TableCell> */}
+                  {/* <TableCell align="right">{row.pick_up_location}</TableCell> */}
+                  {/* <TableCell align="right">{row.drop_off_location}</TableCell> */}
+                  {/* <TableCell align="right">{row.date}</TableCell> */}
                   <TableCell align="right"><Link to="/orders/:id">{row.view}</Link></TableCell>
                   <button onClick={() => {deleteOrder (row.id)}} type="button display in-line padding: 15px" className="btn-danger btn-xsm">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -97,7 +97,7 @@ return(
             </TableBody>
           </Table>
     </TableContainer>
-    {/* <NavLink to ='/'className='logout-button' title='logout'>Log Out</NavLink> */}
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded" onClick={()=>{detailNav("/")}} >Log out</button>
   </>
   
   );

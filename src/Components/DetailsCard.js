@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./DetailsCard.css"
 
 function DetailsCard() {
@@ -8,6 +8,7 @@ function DetailsCard() {
     error: "",
   });
   const { id } = useParams();
+  const back = useNavigate();
 
   useEffect(() => {
     fetch(`http://127.0.0.1:4000/orders/${id}`).then((response) => {
@@ -56,6 +57,7 @@ function DetailsCard() {
                   <p className="card-text text-center">
                     <strong>Date</strong>: { parcel.date}
                   </p>
+                  <button className="back-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded" onClick={()=>{back("/order")}}> Back </button>
               </div>
             </div>
           </div>

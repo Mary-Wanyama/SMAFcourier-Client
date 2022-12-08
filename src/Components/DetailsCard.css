@@ -14,3 +14,14 @@
  align-content: stretch;
  
 }
+.back-button{
+    position: absolute;
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+    min-height:10px; 
+    min-width: 120px;
+}
