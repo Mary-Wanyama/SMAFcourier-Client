@@ -1,18 +1,12 @@
-.restbody{
- 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1rem;
+.card-body{
     width: 100%;
     margin: auto;
     padding: 2rem;
-    display: flex;
- flex-wrap: wrap;
- border-radius: 3px;
- box-shadow: 3px 3px 5px;
- align-items: right;
- align-content: stretch;
- 
+    display: block;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px;
+    align-content: stretch;
 }
 .back-button{
     position: absolute;

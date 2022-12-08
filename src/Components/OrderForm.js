@@ -24,7 +24,7 @@ function OrderForm() {
   const [number_of_kgs, setNumber_Of_Kgs] = useState('')
   const [drop_off_location, setDrop_Off_Location] = useState('')
   const [date, setDate] = useState('')
-  const [sender_name, setSender_Name] = useState('')
+  // const [sender_name, setSender_Name] = useState('')
   const [receiver_name, setReceiver_Name] = useState('')  
   const navigate = useNavigate()
 
@@ -41,7 +41,7 @@ function OrderForm() {
             pick_up_location,
             number_of_kgs,
             drop_off_location,
-            sender_name,
+            // sender_name,
             receiver_name,
             date
         }
@@ -82,12 +82,12 @@ function OrderForm() {
             <div className='class'>
 
            
-                  <TextField
+                  {/* <TextField
                 id="outlined-disabled"
                 label=" Sender Name"
                 value={sender_name}
                 onChange={(e)=>setSender_Name(e.target.value)}
-              />
+              /> */}
 
                  <TextField
                   id="outlined-read-only-input"
