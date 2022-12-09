@@ -90,6 +90,7 @@ function OrderForm() {
               /> */}
 
                  <TextField
+                 required
                   id="outlined-read-only-input"
                   label="Reciever Name"
                   value={receiver_name}
@@ -104,6 +105,7 @@ function OrderForm() {
                 onChange={(e)=>setPackage_Type(e.target.value)}
               />
                <TextField
+               required
                   id="outlined-password-input"
                   label="Kilograms"
                   value={number_of_kgs}
@@ -113,6 +115,7 @@ function OrderForm() {
            
               <div className='class'>
                 <TextField
+                required
                   id="outlined-password-input"
                   label="Date"
                   value={date}
@@ -122,6 +125,7 @@ function OrderForm() {
                 
                 />
                 <TextField
+                required
                   id="outlined-read-only-input"
                   label="Pick Up Location"
                   value={pick_up_location}
@@ -129,6 +133,7 @@ function OrderForm() {
 
                 />
                <TextField
+               required
                 id="outlined-disabled"
                 label=" Drop Off Location"
                 value={drop_off_location}
