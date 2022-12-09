@@ -1,12 +1,10 @@
 .card-body{
-    width: 100%;
+    width: 50%;
     margin: auto;
     padding: 2rem;
     display: block;
-    flex-wrap: wrap;
     border-radius: 3px;
-    box-shadow: 3px 3px 5px;
-    align-content: stretch;
+    box-shadow: 3px 3px 5px 5px;
 }
 .back-button{
     position: absolute;

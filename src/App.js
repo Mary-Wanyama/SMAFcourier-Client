@@ -11,17 +11,12 @@ import OrderForm from "./Components/OrderForm";
 import DetailsCard from "./Components/DetailsCard";
 import Admin from "./Components/Admin";
 import UpdateOrder from './Components/UpdateOrder';
-// import Email from './Components/email';
+import AdminDash from './Components/AdminDash';
+
 
 
 const App =() => {
-  // const[orders, setOrders]= useState("")
-
-  //   useEffect((
-  //       fetch("http://127.0.0.1:4000/orders")
-  //       .then(r=>r.json())
-  //       .then(orders=> setOrders(orders))
-  //   ),[])
+ 
   return(
     <>
       <Navbar/>
@@ -34,8 +29,9 @@ const App =() => {
          <Route path='/admin' element={<Admin/>} />
          <Route path='/orderform' element={<OrderForm />} />
          <Route path="/order/:id" element={<DetailsCard />} />
-         <Route path="/order/:id" element={<UpdateOrder />} />
+         <Route path="/updateorder/:id" element={<UpdateOrder />} />
          <Route path='/admin' element={<Admin/>} />
+         <Route path='/admindashboard' element={<AdminDash/>} />
          <Route path='/contact' element={<ContactUs/>} />
          <Route path='/order' element={<Orders/>} />
          </Routes>

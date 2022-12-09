@@ -11,7 +11,6 @@ import Paper from '@mui/material/Paper';
 import { Link }from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import DetailsCard from "./DetailsCard";
-// import UpdateOrder from "./UpdateOrder";
 
 function Orders() {
 const[orders, setOrders]= useState([])
@@ -93,10 +92,10 @@ return(
                     </svg>
                   </button>
                   <button className="edit-order" 
-                  // onClick={()=>{detailNav("./" + row.id)}}
+                  onClick={()=>{detailNav(`/updateorder/${row.id}`)}}
                   >
                   {/* <Link
-              to={`/orderform/${row.id}`}
+              to={`/updateorder/:id`}
               onClick={() => <UpdateOrder key={row.id} />}
               target="blank"
             >
