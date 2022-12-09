@@ -39,7 +39,6 @@ function Signup() {
               </label>
               <input type="text"required autocomplete="off"/>
             </div>
-          </div>
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
@@ -51,6 +50,7 @@ function Signup() {
               Confirm Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
+          </div>
           </div>
           </form>
           <div className='signup-btn'>

@@ -28,9 +28,10 @@ a{
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
-    
-   
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);   
+}
+.top-row{
+    margin-bottom: 3rem;
 }
 
 .signup-content{
@@ -41,7 +42,7 @@ a{
     width:100%;
 }
 .field{
-    margin: 20px 0;
+    /* margin: 20px 0; */
     position: relative;
     font-size: 14px;
     width: 100%;
