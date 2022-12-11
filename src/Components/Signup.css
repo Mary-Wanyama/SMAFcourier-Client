@@ -84,48 +84,13 @@ input:not(:placeholder-shown){
 }
 .signup-btn{
     text-align: center;
-    width: 10%;
+    width: 45%;
     padding: 0.5rem;
-    /* border: 1px solid transparent; */
     background-color: #3897f0; 
     color: #fff;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

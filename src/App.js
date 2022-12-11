@@ -10,7 +10,7 @@ import Signup from "./Components/Signup";
 import OrderForm from "./Components/OrderForm";
 import DetailsCard from "./Components/DetailsCard";
 import Admin from "./Components/Admin";
-import UpdateOrder from './Components/UpdateOrder';
+// import UpdateOrder from './Components/UpdateOrder';
 import AdminDash from './Components/AdminDash';
 
 
@@ -29,7 +29,7 @@ const App =() => {
          <Route path='/admin' element={<Admin/>} />
          <Route path='/orderform' element={<OrderForm />} />
          <Route path="/order/:id" element={<DetailsCard />} />
-         <Route path="/updateorder/:id" element={<UpdateOrder />} />
+         {/* <Route path="/updateorder/:id" element={<UpdateOrder />} /> */}
          <Route path='/admin' element={<Admin/>} />
          <Route path='/admindashboard' element={<AdminDash/>} />
          <Route path='/contact' element={<ContactUs/>} />
