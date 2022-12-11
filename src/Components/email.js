@@ -1,35 +1,50 @@
-// import React, { useState }  from "react";
-// import  "./email.css"
+import React, { Fragment, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import "./email.css"
  
-// const Email = () =>{
-//    const [formState, setFormState] = useState({})
-  
-//    const changeState = (e) =>{
-//        setFormState({...formState, [e.target.name]: e.target.value})
-//    }
-//    const handleSubmit = (e) =>{
-//        e.preventDefault
-//        const config = {
-//            SecureToken: '934bb5cc-b914-4385-b22e-8a08c5c6d90c ',
-//            To : 'immaculatemariah@mail.com',
-//            From : formState.email,
-//            Subject : formState.title,
-//            Body : `${formState.name} ${formState.message}`
-//        }
-//        if(window.Email){
-//            window.email.send(config).then(()=>{alert("email successfully sent")})
-//        }
-//    }
-//    return (
-//        <div>
-//            <form onSubmit={handleSubmit}>
-//                <input type="text" name="name" id="name"value={formState.name} onChange={changeState}/>
-//                <input type="email" name="email" id="email" value={formState.email} onChange={changeState}/>
-//                <input type="text" name="title" id="title" value={formState.title} onChange={changeState}/>
-//                <textarea type="text" name="message"  id="content" value={formState.message} onChange={changeState}/>
-//                <input type="submit" value="send email"/>
-//                </form>
-//        </div>
-//    )
-// }
-// export default Email
+export const Email = () => {
+ const form = useRef();
+ 
+ const sendEmail = (e) => {
+   e.preventDefault();
+ 
+   emailjs.sendForm(process.env.REACT_APP_EMAIL_KEY_ID,
+     process.env.REACT_APP_TEMPLATE_ID,
+     form.current,
+     process.env.REACT_APP_USER_ID)
+     .then((result) => {
+         console.log(result.text);
+         alert("message sent successfully")
+     }, (error) => {
+         console.log(error.text);
+     });
+ };
+ 
+ return (
+   <Fragment className="emailus">
+    <div id='content'>
+    <form ref={form} onSubmit={sendEmail} id="emailform">
+     <label>Name:</label>
+     
+     <input type="text" name="user_name" id='name'/>
+     <br/>
+     <label>Email:</label>
+     
+     <input type="email" name="user_email" id='email'/>
+     <br/>
+     <label>Message:</label>
+     
+     <textarea name="message" id='title'/>
+     <br/>
+     <input type="submit" value="Send" className='submitMessage'/>
+   </form>
+   <p>we are using a react template to send emails. it has not updated the usage of the an external email yet, <br/>
+   the email is received with your details but it may not appear in your sent emails</p>
+    </div>
+
+   </Fragment>
+ 
+ );
+};
+ 
+export default Email
