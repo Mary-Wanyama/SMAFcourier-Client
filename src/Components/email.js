@@ -42,7 +42,7 @@ export const Email = () => {
    <br/>
    <div> </div>
    <p><em> we are using a react template to send emails. it has not updated the usage of the an external email yet, <br/>
-   the email is received with your details but it may not appear in your sent emails</em></p>
+   the email is received with your details but it may not appear in your sent emails. you will get a confirmation email from us.</em></p>
     </div>
 
    </Fragment>

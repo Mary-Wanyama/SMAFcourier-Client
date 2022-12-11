@@ -12,6 +12,7 @@ import DetailsCard from "./Components/DetailsCard";
 import Admin from "./Components/Admin";
 // import UpdateOrder from './Components/UpdateOrder';
 import AdminDash from './Components/AdminDash';
+import Maps from './Components/maps';
 
 
 
@@ -29,6 +30,7 @@ const App =() => {
          <Route path='/admin' element={<Admin/>} />
          <Route path='/orderform' element={<OrderForm />} />
          <Route path="/order/:id" element={<DetailsCard />} />
+         <Route path="/maps" element={<Maps />} />
          {/* <Route path="/updateorder/:id" element={<UpdateOrder />} /> */}
          <Route path='/admin' element={<Admin/>} />
          <Route path='/admindashboard' element={<AdminDash/>} />
