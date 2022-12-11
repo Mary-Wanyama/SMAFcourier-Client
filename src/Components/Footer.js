@@ -1,15 +1,15 @@
 import React from "react";
 import "../Css/Footer.css"
-// import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom"; 
 
 
 const Footer =() =>{
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
-    // const moveToMap = () =>{
-    //     alert('you are being navigated to maps')
-    //     navigate('/maps')
-    // }
+    const moveToMap = () =>{
+        alert('you are being navigated to maps')
+        navigate('/maps')
+    }
     return(
         <div className="copyright"> 
          <footer>
@@ -33,7 +33,7 @@ const Footer =() =>{
                 <h2 >SMAF Courrier</h2>
                     <p>Tom Mboya Street</p>
                     <p>Nairobi,Kenya</p>
-                        {/* <button onClick={moveToMap}>maps</button> */}
+                        <button onClick={moveToMap}>maps</button>
                 </div>
             </div>
         </section>
