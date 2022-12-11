@@ -5,7 +5,7 @@ import Email from "./email"
 
 const ContactUs =() =>{
     return(
-        <div className="contact-container">
+        <div >
             <Email/>
          </div> 
     )
