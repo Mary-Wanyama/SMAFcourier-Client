@@ -18,6 +18,7 @@ export const Email = () => {
      }, (error) => {
          console.log(error.text);
      });
+     e.reset()
  };
  
  return (
