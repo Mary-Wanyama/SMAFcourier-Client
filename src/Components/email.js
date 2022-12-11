@@ -39,8 +39,10 @@ export const Email = () => {
      <br/>
      <input type="submit" value="Send" className='submitMessage'/>
    </form>
-   <p>we are using a react template to send emails. it has not updated the usage of the an external email yet, <br/>
-   the email is received with your details but it may not appear in your sent emails</p>
+   <br/>
+   <div> </div>
+   <p><em> we are using a react template to send emails. it has not updated the usage of the an external email yet, <br/>
+   the email is received with your details but it may not appear in your sent emails</em></p>
     </div>
 
    </Fragment>
