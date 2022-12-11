@@ -1,13 +1,16 @@
-import React from "react"
+import React, { Fragment } from "react"
 
 import "./ContactUs.css"
 import Email from "./email"
 
 const ContactUs =() =>{
     return(
-        <div >
+        <Fragment>
+         <div className="contactus">
             <Email/>
          </div> 
+        </Fragment>
+
     )
 }
 
