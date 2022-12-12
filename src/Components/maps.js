@@ -71,11 +71,11 @@ function Maps() {
      position='relative'
      flexDirection='column'
      alignItems='center'
-     bgColor='blue.200'
+     bgColor='rgb(248, 240, 205)'
      h='100vh'
      w='100vw'
    >
-     <Box position='absolute' left={4} top={3} h='80%' w='80%'>
+     <Box position='absolute' left={0} top={3} h='100%' w='100%'>
      <GoogleMap center={center} zoom={15} mapContainerStyle={{width: "100%", height: "100%"}}
      onLoad={(map)=>setMap(map)}
      >
@@ -90,7 +90,7 @@ function Maps() {
        p={4}
        borderRadius='lg'
        mt={4}
-       bgColor='black'
+       bgColor='white'
        shadow='base'
        minW='container.md'
        zIndex='1'
@@ -107,11 +107,11 @@ function Maps() {
         
         
          <ButtonGroup>
-           <Button colorScheme='blue' type='submit' onClick={calculateRoutes}>
+           <Button colorScheme='orange' type='submit' onClick={calculateRoutes}>
              Calculate Route
            </Button>
            <IconButton
-             bgColor='black'
+             bgColor='white'
              aria-label='center back'
              icon={<FaTimes />}
              onClick={clearRoute}
@@ -122,7 +122,7 @@ function Maps() {
          <Text>Distance: {distance}</Text>
          <Text>Duration: {duration}</Text>
          <IconButton
-         bgColor='black'
+         bgColor='white'
            aria-label='center back'
            icon={<FaLocationArrow />}
            isRound
