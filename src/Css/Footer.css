@@ -3,13 +3,45 @@ footer{
     /* position: fixed;
     display: flex;
     justify-content: center; */
-    /* bottom: 1px; */
-    padding: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 0%;
+    padding: 1vw;
     height: fit-content;
     min-width: 100%;
     font-size: 1.5vw;
+    padding-bottom: 5vw;
+    color: white;
 }
-
+.icons{
+    font-size: 1.2vw;
+    color: white;
+}
+.contact-info{
+    /* background-color: white; */
+    width: 13vw;
+    padding: 1vw;
+  
+    /* border-radius: 5%; */
+    border-top-color: black;
+    border-top-width: 0.1vw;
+    border-left-color: black;
+    border-left-width: 0.1vw;
+    
+}
+.contact-info button{
+    background-color: rgb(0, 247, 255);
+    border-radius: 5%;
+    height: fit-content;
+    padding: 0.7vw;
+    width: 10vw;
+    margin-top: 1vw;
+    box-shadow: 0.8vh 0.8vh 0.2em black;
+    color: black;
+}
+.cont-container{
+    display: flex;
+    justify-content: space-around;
+}
 /* .copyright {
     display: flex;
     align-items: center;
