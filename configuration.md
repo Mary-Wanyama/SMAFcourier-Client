@@ -39,4 +39,4 @@ Mary Wanyama
 mary.wanyama@student.moringaschool.com
 
 ### Project url
-http://sma-fcourier-client.vercel.app/
+https://sma-fcourier-client-one.vercel.app/
